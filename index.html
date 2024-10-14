@@ -5,38 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        *{
+            box-sizing: border-box; /*content-box viene por defecto*/
+            /*border-box suma los 250 pixeles con bordes y contenido*/
             margin: 0;
         }
-        .contenedor{
-            background-color: rgba(122,123,123,0.2);
-        }
+
         .uno{
             background-color: red;
-            width: 49%;
-            display: inline-block;
-        }
-        .dos{
-            background-color: green;
-            width: 49%;
-            display: inline-block;
-        }
-        .tres{
-            background-color: orange;
-            display: inline;
-        }
-        .cuatro{
-            background-color: yellow;
-            display: block;
+            padding: 35px;
+            border: 5px solid green;
+            margin: 15px;
+
+            width: 250px; /*Solo influyen en el contenido (se suma padding y border)*/
         }
     </style>
 </head>
 <body>
     <div class="contenedor">
-        <span class="uno">Contenido 1</span>
-        <span class="dos">Contenido 2</span>
-        <div class="tres">Contenido 3</div>
-        <span class="cuatro">Contenido 4</span>
+        <div class="uno">Contenido 1</div>
     </div>
 </body>
 </html>
