@@ -5,31 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            margin: 0;
+        }
         /*html{
             font-size: 5px; Estandar route element (rem)
         }*/
         .forma1{
             background-color: red;
-            width: 100vw; /*100% de la vista ancho*/
-            height: 100vh; /*100% de la vista alto*/
-            font-size: 3rem; /*16 px vale rem predeterminado*/
-            color: white;
-            font-weight: bolder;
+            width: 250px;
+            height: 250px;
+            padding: 125px 50px 25px 75px;
+            border: 12px solid yellow;
+            margin: 25px;
         }
-        .forma2{
-            background-color: green;
-            width: 100vw;
-            height: 100vh;
+        span{
+            background-color: blue;
             color: white;
+            width: 250px; /*Elementos en linea no crecen*/
+            height: 250px;
         }
     </style>
 </head>
 <body>
     <div class="forma1">
         Lorem ipsum dolor sit amet
-       </div>
-    <div class="forma2">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magni corporis ea porro ex excepturi quas accusamus ipsam nihil, blanditiis, voluptatibus, facilis consequuntur ipsum? Illo nam amet consequatur saepe eos?
     </div>
+    <span>
+        HOLA MUNDO
+    </span>
+
 </body>
 </html>
